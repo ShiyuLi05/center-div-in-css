@@ -132,3 +132,4 @@ Relative positioning for the parent container and absolute positioning for child
             }
         </style>
 ```
+![image](https://github.com/ShiyuLi05/center-div-in-css/blob/main/center%20div.png)
