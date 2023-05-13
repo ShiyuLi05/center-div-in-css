@@ -1,56 +1,6 @@
 # Center div in CSS
 A few ways to center div in CSS
 
-## ```div``` and CSS
-The tag ```<div>``` defines a division or a section in an HTML document.
-
-The tag ```<div>``` is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.
-
-The tag ```<div>``` is easily styled by using the class or id attribute.
-
-CSS is the language we use to style an HTML document.
-CSS describes how HTML elements should be displayed.
-
-This tutorial will teach you how to center a div using CSS.
-
-## Center words in a div 
-
-### I. Use line-height
-```HTML
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            height: 800px;
-            background-color: #000;
-            border: 1px solid;
-        }
-        .child {
-            width: 300px;
-            height: 300px;
-            background-color: #fff;
-            margin: 250px auto;
-        }
-        p {
-            line-height: 300px;
-            text-align: center;
-            font-size: 30px;
-        }
-    </style>
-
-<body>
-    <div class="container">
-        <div class="child">
-            <p>Hello world</p>
-        </div>
-    </div>
-</body>
-```
-![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/main/center-words.png)
-
-
 ### I. Using margin
 
 To center the div horizontally, set the left and right margins to ```auto```.
