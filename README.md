@@ -48,7 +48,7 @@ This tutorial will teach you how to center a div using CSS.
     </div>
 </body>
 ```
-
+![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/main/center-words.png)
 
 
 ### I. Using margin
