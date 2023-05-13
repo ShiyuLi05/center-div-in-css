@@ -88,8 +88,7 @@ b. the height of parent element is fixed
 ```
 ![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/center-words/center-words-2.png)
 
-<font color=Blue>Test</font>
- ### Some explanation about 'display: table'
+$\textcolor{Red}{Some explanation about 'display:table'}$
  (1) When use 'display:table', 'padding' can't work.</br>
  (2) When use 'display:table-row', 'padding' and 'margin' can't work.</br>
  (3) When use 'display:table-cell', 'margin' can't work.</br>
