@@ -8,7 +8,7 @@ A few ways to center words in div
             margin: 0;
             padding: 0;
         }
-        .container {
+        .parent {
             height: 800px;
             background-color: #000;
             border: 1px solid;
@@ -25,7 +25,7 @@ A few ways to center words in div
     </style>
 
 <body>
-    <div class="container">
+    <div class="parent">
         <div class="child">
             Hello world.
         </div>
@@ -48,8 +48,7 @@ a. the height of parent element is not-fixed
     }
 </style>
 
-<body>
-<div class="container">
+<div class="parent">
     <div class="child">
         Hello world.
         Hello world.
@@ -57,7 +56,40 @@ a. the height of parent element is not-fixed
         Hello world.
     </div>
 </div>
-</body>
 ```
-![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/main/center-words.png)
+![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/center-words/center-words-2.png)
 
+b. the height of parent element is fixed
+```HTML
+<style>
+    .child {
+        display: table;
+        width: 500px;
+        height: 500px;
+        font-size: 30px;
+    }
+    .child-middle {
+        display: table-cell; 
+        vertical-align: middle; /* Horizontal center */
+        text-align: center; /* optional */
+    }
+</style>
+
+<div class="parent">
+    <div class="child">
+        <div class="child-middle">
+            IE6 & IE7 can't use this way.
+            IE6 & IE7 can't use this way.
+            IE6 & IE7 can't use this way.
+            IE6 & IE7 can't use this way.
+        </div>
+    </div>
+</div>
+```
+![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/center-words/center-words-2.png)
+
+$\textcolor{Red}{ ### Some explanation about 'display: table'}$
+ ### Some explanation about 'display: table'
+ (1) When use 'display:table', 'padding' can't work.
+ (2) When use 'display:table-row', 'padding' and 'margin' can't work
+ (3) When use 'display:table-cell', 'margin' can't work
