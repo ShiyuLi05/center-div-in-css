@@ -12,3 +12,6 @@ CSS is the language we use to style an HTML document.
 CSS describes how HTML elements should be displayed.
 
 ## If you want to see the details go to branches
+
+### How to center a div(https://github.com/ShiyuLi05/center-div-in-css/tree/center-div)
+### How to center text（https://github.com/ShiyuLi05/center-div-in-css/tree/center-words）
