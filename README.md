@@ -1,7 +1,7 @@
 # Center div in CSS
 A few ways to center div in CSS
 
-### I. Using margin
+### Ⅰ. Using margin
 
 To center the div horizontally, set the left and right margins to ```auto```.
 
@@ -45,7 +45,7 @@ which are half the height of the parent container minus half the height of the c
 ```
 
 
-### II. absolute position
+### Ⅱ. absolute position
 make the child container is enable with ```position: absolute```; and make sure left, right, top and bottome are all 0;  ```margin :auto```
 ```HTML
         <style>
@@ -72,7 +72,7 @@ make the child container is enable with ```position: absolute```; and make sure 
         </style>
 ```
 
-### III. relative position
+### Ⅲ. relative position
 Relative positioning for the parent container and absolute positioning for child container. 
 ```HTML
         <style>
@@ -98,7 +98,7 @@ Relative positioning for the parent container and absolute positioning for child
         </style>
 ```
 
-### IV. flex layout
+### Ⅳ. flex layout
 ```HTML
       <style>
             *{
@@ -119,4 +119,88 @@ Relative positioning for the parent container and absolute positioning for child
             }
         </style>
 ```
+
+### Ⅴ. translate 
+```HTML
+<style>
+    .parent {
+        background-color: #000;
+        width: 100%;
+        height: 800px;
+        position: relative;
+    }
+    .child {
+        background-color: #fff;
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        position: absolute;
+        left: 50%; 
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+<div class="parent">
+    <div class="child"></div>
+</div>
+```
+
+### Ⅶ. vertical-align (take care of the width and heigh)
+```HTML
+.parent {
+    background-color: #000;
+    width: 800px;
+    height: 800px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.child {
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+```
+
+### Ⅷ. display:grid
+a.
+```HTML
+.parent {
+    background-color: #000;
+    width: 100%;
+    height: 800px;
+    display: grid;
+}
+.child {
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    place-self: center;
+            }
+```
+b. 
+```HTML
+.parent {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+```
+c. 
+```HTML
+.parent {
+    display: grid;
+}
+.child {
+    margin: auto;
+}
+```
+d. 
+```HTML
+.parent {
+    display: grid;
+    place-items: center;
+}
+```
+
 ![image](https://github.com/ShiyuLi05/center-div-in-css/blob/main/center%20div.png)
