@@ -132,3 +132,5 @@ b.(i) the height of parent element is fixed
 ```Some explanation about 'vertical-alian'```
 (1) 'vertical-alian shoulde be used on 'inline' element include 'inline-block';</br>
 (2) If the height of the text over than the height of container, 'vertical-alian: center' can't work;</br>
+
+##Thanks for Reading.
