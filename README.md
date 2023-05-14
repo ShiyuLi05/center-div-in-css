@@ -59,7 +59,7 @@ a. the height of parent element is not-fixed
 ```
 ![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/center-words/center-words-2.png)
 
-b. the height of parent element is fixed
+b.(i) the height of parent element is fixed
 ```HTML
 <style>
     .child {
@@ -86,9 +86,49 @@ b. the height of parent element is fixed
     </div>
 </div>
 ```
-![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/center-words/center-words-2.png)
+![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/center-words/center-words-3.png)
 
 ` Some explanation about 'display:table' ` </br>
  (1) When use 'display:table', 'padding' can't work.</br>
  (2) When use 'display:table-row', 'padding' and 'margin' can't work.</br>
  (3) When use 'display:table-cell', 'margin' can't work.</br>
+ </br>
+ b.(ii) For IE7 and lower (fixed height)
+ ```HTML
+<style>
+    .parent {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 400px;
+        height: 400px;
+        margin: 50px auto;
+        border: 1px solid;
+        background-color: #fff;
+    }
+    .child {
+        width: 100%;
+        text-align: center; /* Vertical center */
+   /* - - - -Horizontal center - - -  */
+        position: absolute; 
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+<div class="parent">
+    <div class="child">
+        <div class="child-middle">
+            fixed height can use with IE7
+            fixed height can use with IE7
+            fixed height can use with IE7
+            fixed height can use with IE7
+        </div>
+    </div>
+</div>
+ ```
+ ![image](https://raw.githubusercontent.com/ShiyuLi05/center-div-in-css/center-words/center-words-4.png)
+```Some explanation about 'vertical-alian'```
+(1) 'vertical-alian shoulde be used on 'inline' element include 'inline-block';</br>
+(2) If the height of the text over than the height of container, 'vertical-alian: center' can't work;</br>
